@@ -1,0 +1,39 @@
+/*
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Other/File.java to edit this template
+ */
+
+/**
+ *
+ * @author jlhicks2
+ */
+public class Example3 {
+
+    /**
+     * @param args the command line arguments
+     */
+    public static void main(String args[]) {
+        // TODO code application logic here
+        int v;
+        double x;
+        float z;
+        
+        v = 10;
+        x = 10.0;
+        z = 10.0f;
+        
+        System.out.println("Original value of v: " + v);
+        System.out.println("Original value of x: " + x);
+        System.out.println("Original value of z: " + z);
+        System.out.println();
+        
+        v = v / 4;
+        x = x / 4;
+        z = z / 4;
+        
+        System.out.println("v after division: " + v);
+        System.out.println("x after division: " + x);
+        System.out.println("z after division: " + z);
+
+    }
+}
