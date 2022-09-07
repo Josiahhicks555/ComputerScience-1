@@ -1,0 +1,40 @@
+/* This program demonstrates a var
+    This is a multiline comment.
+    Example2.Java 
+*/
+
+//This is a single line comment
+
+//The keyword class declares that a new class is being defined and ends with the closing curly brace '}'
+
+class Example2 {
+    /*c;ass definition begins with the opening brace '{'
+    and ends with the closing brace '}'
+    */
+    //A java program begins with a call to main {}.
+    //The public keyword is an access modifier
+    /* the static keyword allown main{} to be called before an object of the class has been created
+    */
+    /*the void keyword tells the compiler that main{} does not return value
+    */
+    /*any info that needs to pass to the method is done by variables within the parentheses
+    */
+    //String is a reference data type
+    //args is a parameter (var)
+    //[] denotes an array, an array is a collection of similar objects
+
+
+public static void main(String args[]) {
+// int is a data type; only holds whole numbers;
+int myVar1; //declares a var
+int myVar2;
+
+myVar1 = 512; // assigns a value to a var
+
+System.out.println("myVar1 contains" + myVar1);
+myVar2 = myVar1 / 2;
+
+System.out.print("myVar2 contains myVar1 / 2: ");
+System.out.print(myVar2);
+    }
+}
