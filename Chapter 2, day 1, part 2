@@ -1,0 +1,21 @@
+public class Boo {
+
+    /**
+     * @param args the command line arguments
+     */
+    public static void main(String args[]) {
+        // TODO code application logic here
+        boolean b;
+        
+        b = false;
+        
+        System.out.println("b is " + b);
+        
+        b = true;
+        System.out.println("b is " + b);
+        
+        if (b) System.out.println("This is not executed");
+        
+        System.out.println("10 > 9 is " + (10 > 9));
+    }
+}
