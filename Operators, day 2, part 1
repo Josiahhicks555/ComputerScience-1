@@ -47,9 +47,9 @@ public class Operators {
             b2 = false;
             
             if (b1 & b2) System.out.println("this won't exexute");
-            if (! (b1 & b2)) System.out.println("this won't exexute");
-            if (b1 | b2) System.out.println("this won't exexute");
-            if (b1 ^ b2) System.out.println("this won't exexute");
+            if (! (b1 & b2)) System.out.println("! (b1 & b2) is true");
+            if (b1 | b2) System.out.println("b1 | b2 is true");
+            if (b1 ^ b2) System.out.println("b1 ^ b2 is true");
             
         }
 
