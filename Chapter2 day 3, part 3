@@ -1,0 +1,50 @@
+public class TypeConversion {
+
+    /**
+     * @param args the command line arguments
+     */
+    public static void main(String args[]) {
+        // TODO code application logic here
+//part 1
+       // long L;
+      //  double D;
+        
+      //  L = 10023285L;
+      //  D = L;
+        
+      //  System.out.println("L and D: " + L " and " + D);
+        
+//Part 2
+        double x, y;
+        byte b; int i; char ch;
+        
+        x = 10.0;
+        y = 3.0;
+        
+        i = (int) (x / y); 
+        System.out.println("Integer outcome of x / y: " + i);
+        
+        i = 100;
+        b = (byte) i;
+        
+        System.out.println("Value of b: " + b);
+        
+        i = 257;
+        b = (byte) + i;
+        System.out.println("Value of b: " + b);
+        
+        b = 88;
+        ch = (char) b;
+        System.out.println("ch: " + ch);
+        
+//Part 3
+        byte m; 
+        int n;
+        
+        m = 10;
+        n = m * m;
+        
+        m = 10;
+        n = (byte) (m * m);
+        System.out.println("n and m: " + n + " and " + m);
+        
