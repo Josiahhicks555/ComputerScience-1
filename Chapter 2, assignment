@@ -1,26 +1,42 @@
-public class Scoreboard {
+public class Scoreboard1 {
 
     /**
      * @param args the command line arguments
      */
     public static void main(String args[]) {
-        // TODO code application logic here
-        char Team1;
-        char Team2;
-        char Win;
-        int FinalScore;
-        int Quarters;
+        // Team and score
+        int Team1 = 0;
+        int Team2 = 0;
         
-        FinalScore = 0;
-        Win = 0;
-        Team1 = 0;
-        Team2 = 0;
+        
+        //Random numb gen 0-10
+        int min = 0;
+        int max = 10;
+        // Team 1
+        int Team1rand1 = (int)Math.floor(Math.random()*(max-min+1)+min);
+        int Team1rand2 = (int)Math.floor(Math.random()*(max-min+1)+min);
+        int Team1rand3 = (int)Math.floor(Math.random()*(max-min+1)+min);
+        int Team1rand4 = (int)Math.floor(Math.random()*(max-min+1)+min);
+        int Team1rand5 = (int)Math.floor(Math.random()*(max-min+1)+min);
+        int Team1rand6 = (int)Math.floor(Math.random()*(max-min+1)+min);
+        
+        //Team 2
+        int Team2rand1 = (int)Math.floor(Math.random()*(max-min+1)+min);
+        int Team2rand2 = (int)Math.floor(Math.random()*(max-min+1)+min);
+        int Team2rand3 = (int)Math.floor(Math.random()*(max-min+1)+min);
+        int Team2rand4 = (int)Math.floor(Math.random()*(max-min+1)+min);
+        int Team2rand5 = (int)Math.floor(Math.random()*(max-min+1)+min);
+        int Team2rand6 = (int)Math.floor(Math.random()*(max-min+1)+min);
+        
         
         System.out.println("Quarters | 1 | 2 | 3 | 4 | 5 | 6 | FinalScore: " + "\r");
         
-        System.out.println("Team 1: " + " | " + " | " + " | " + " | " + " | " + " | " + "\r");
+        System.out.println("Team 1: " + " | " + Team1rand1 + " | " + Team1rand2 + " | " + Team1rand3 + " | " + Team1rand4 + " | " + Team1rand5 + " | " + Team1rand6 + " | " + Team1 + Team1rand1 + Team1rand2 +  Team1rand3 +  Team1rand4 +  Team1rand5 +  Team1rand6 + "\r");
+        System.out.println("Team 2: " + " | " + Team2rand1 + " | " + Team2rand2 + " | " + Team2rand3 + " | " + Team2rand4 + " | " + Team2rand5 + " | " + Team2rand6 + " | " + Team2 + Team2rand1 + Team2rand2 +  Team2rand3 +  Team2rand4 +  Team2rand5 +  Team2rand6 + "\r");
         
-        
+        if (Team1 > Team2) System.out.println("Team 1 wins!");
+        if (Team1 < Team2) System.out.println("Team 2 wins!");
+        //if (Team1 == Team2) System.out.println("Team 1 and team 2 Tied!");
         
         
         
