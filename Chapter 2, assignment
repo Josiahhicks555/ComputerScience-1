@@ -1,8 +1,5 @@
 public class Scoreboard1 {
 
-    /**
-     * @param args the command line arguments
-     */
     public static void main(String args[]) {
         // Team and score
         int Team1 = 0;
@@ -30,13 +27,18 @@ public class Scoreboard1 {
         
         
         System.out.println("Quarters | 1 | 2 | 3 | 4 | 5 | 6 | FinalScore: " + "\r");
+        Team1 = Team1rand1 + Team1rand2 +  Team1rand3 +  Team1rand4 +  Team1rand5 +  Team1rand6;
+        Team2 = Team2rand1 + Team2rand2 +  Team2rand3 +  Team2rand4 +  Team2rand5 +  Team2rand6;
         
-        System.out.println("Team 1: " + " | " + Team1rand1 + " | " + Team1rand2 + " | " + Team1rand3 + " | " + Team1rand4 + " | " + Team1rand5 + " | " + Team1rand6 + " | " + Team1 + Team1rand1 + Team1rand2 +  Team1rand3 +  Team1rand4 +  Team1rand5 +  Team1rand6 + "\r");
-        System.out.println("Team 2: " + " | " + Team2rand1 + " | " + Team2rand2 + " | " + Team2rand3 + " | " + Team2rand4 + " | " + Team2rand5 + " | " + Team2rand6 + " | " + Team2 + Team2rand1 + Team2rand2 +  Team2rand3 +  Team2rand4 +  Team2rand5 +  Team2rand6 + "\r");
+        
+        System.out.println("Team 1: " + " | " + Team1rand1 + " | " + Team1rand2 + " | " + Team1rand3 + " | " + Team1rand4 + " | " + Team1rand5 + " | " + Team1rand6 + " | " + Team1 + "\r");
+        System.out.println("Team 2: " + " | " + Team2rand1 + " | " + Team2rand2 + " | " + Team2rand3 + " | " + Team2rand4 + " | " + Team2rand5 + " | " + Team2rand6 + " | " + Team2 + "\r");
+        
+       
         
         if (Team1 > Team2) System.out.println("Team 1 wins!");
         if (Team1 < Team2) System.out.println("Team 2 wins!");
-        //if (Team1 == Team2) System.out.println("Team 1 and team 2 Tied!");
+        if (Team1 == Team2) System.out.println("Team 1 and team 2 Tied!");
         
         
         
