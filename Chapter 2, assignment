@@ -1,6 +1,6 @@
 public class Scoreboard1 {
 
-    public static void main(String args[]) {
+       public static void main(String args[]) {
         // Team and score
         int Team1 = 0;
         int Team2 = 0;
@@ -25,6 +25,11 @@ public class Scoreboard1 {
         int Team2rand5 = (int)Math.floor(Math.random()*(max-min+1)+min);
         int Team2rand6 = (int)Math.floor(Math.random()*(max-min+1)+min);
         
+        //Overtime
+        int overtimeMin = 0;
+        int overtimemax = 1000;
+        int Overtime1 = (int)Math.floor(Math.random()*(overtimemax-overtimeMin+1)+overtimeMin);
+        int Overtime2 = (int)Math.floor(Math.random()*(overtimemax-overtimeMin+1)+overtimeMin);
         
         System.out.println("Quarters | 1 | 2 | 3 | 4 | 5 | 6 | FinalScore: " + "\r");
         Team1 = Team1rand1 + Team1rand2 +  Team1rand3 +  Team1rand4 +  Team1rand5 +  Team1rand6;
@@ -38,9 +43,18 @@ public class Scoreboard1 {
         
         if (Team1 > Team2) System.out.println("Team 1 wins!");
         if (Team1 < Team2) System.out.println("Team 2 wins!");
-        if (Team1 == Team2) System.out.println("Team 1 and team 2 Tied!");
         
-        
+        //Tie Game
+        if (Team1 == Team2){
+            Team1 = Overtime1;
+            Team2 = Overtime2;
+            System.out.println("Team 1 and team 2 Tied! Extra round!!");
+            System.out.println("Team 1 overtime: " + Team1);
+            System.out.println("Team 2 overtime: " + Team2);
+            if (Team1 > Team2) System.out.println("Team 1 wins!");
+            if (Team1 < Team2) System.out.println("Team 2 wins!");
+            if (Team1 == Team2) System.out.println("Team 1 and team 2 Tied! No more rounds!!");
+        }
         
     }
 }
