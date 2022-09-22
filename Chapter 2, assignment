@@ -1,6 +1,6 @@
-public class Scoreboard1 {
 
-       public static void main(String args[]) {
+public class Score {
+    public static void main(String args[]) {
         // Team and score
         int Team1 = 0;
         int Team2 = 0;
