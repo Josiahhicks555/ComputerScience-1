@@ -1,0 +1,36 @@
+
+import java.io.IOException;
+
+
+public class Quiz1 {
+    
+    public static void main(String args[]) throws IOException {
+    
+    char a, b, c, salesTax;
+    a = (int) 6.99;
+    b = (int) 9.99;
+    c = (int) 19.99;
+    salesTax = (int) 0.07;
+    
+    System.out.print("Press the key a, b, or c: " );
+
+    System.in.read();
+    
+    if (char = a) {
+        System.out.println("Your sales is: " + a + salesTax);
+    }
+    
+    if (char = b) {
+    System.out.println("Your sales is: " + b + salesTax);
+    } 
+    
+    if (char = c) {
+    System.out.println("Your sales is: " + c + salesTax);
+    }
+    
+    else (char != a && char != b && char != c) System.out.println("Error");
+    
+    
+    }
+    
+}
